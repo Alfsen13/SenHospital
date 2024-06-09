@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sen Hospital</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- main style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- form style -->
+    <link rel="stylesheet" href="css/form-style.css" />
+
+    <style>
+      /* Tambahkan padding pada section agar tidak tertimpa navbar */
+      section {
+        padding-top: 100px; /* Sesuaikan nilai ini sesuai dengan tinggi navbar */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Sen<span>Hospital.</span></a>
+      <div class="navbar-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">Tentang Kami</a>
+        <a href="pengajuan.html">Pengajuan</a>
+        <a href="contact.html">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- Ajukan section start-->
+    <section class="form-section">
+      <div class="container">
+        <form action="submit.php" method="post">
+          <h2>Registrasi Pasien</h2>
+          <div class="form-group">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" required />
+          </div>
+
+          <div class="form-group">
+            <label for="tanggal-lahir">Tanggal Lahir:</label>
+            <input
+              type="date"
+              id="tanggal-lahir"
+              name="tanggal-lahir"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="jenis-kelamin">Jenis Kelamin:</label>
+            <select id="jenis-kelamin" name="jenis-kelamin" required>
+              <option value="pria">Pria</option>
+              <option value="wanita">Wanita</option>
+              <option value="lainnya">Lainnya</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="alamat">Alamat:</label>
+            <textarea id="alamat" name="alamat" rows="4" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="telepon">Nomor Telepon:</label>
+            <input type="tel" id="telepon" name="telepon" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="jenis-layanan">Jenis Layanan:</label>
+            <select id="jenis-layanan" name="jenis-layanan" required>
+              <option value="konsultasi-penyakit">Konsultasi Penyakit</option>
+              <option value="igd">IGD</option>
+              <option value="tanya-obat">Tanya Obat</option>
+            </select>
+          </div>
+
+          <button type="submit">Ajukan</button>
+        </form>
+      </div>
+    </section>
+    <!-- Ajukan section end-->
+
+    <!--Footer start-->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61550564738889"
+          ><i data-feather="facebook"></i
+        ></a>
+      </div>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">Tentang Kami</a>
+        <a href="pilih.html">Pengajuan</a>
+        <a href="contact.html">Kontak</a>
+      </div>
+      <div class="credit">
+        <p>
+          created by
+          <a href="mailto:majidmushthafaalfurqani@gmail.com"
+            >majidmushthafaalfurqani@gmail.com</a
+          >. | &copy2024
+        </p>
+      </div>
+    </footer>
+    <!--Footer end-->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
